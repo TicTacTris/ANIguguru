@@ -13,28 +13,20 @@ body {
 
 .header {
 	background-color: #212121;
-	display: block;
-    padding: 10px;
-    height: 60px;
-	justify-content: space-between;
 
 	h1 {
         color: #ececec;
         font-size: 32px;
         font-weight: 700;
+		margin-bottom: 0;
         text-align: left;
 
         strong {
-    		color: #fd9330;
+    		color: #a00e3f;
 			font-size: 28px;
 			margin-left: -5px;
         }
     }
-}
-
-.header, .menu-container {
-    display: flex;
-    align-items: center;
 }
 
 .menu-link {
@@ -45,13 +37,10 @@ body {
 }
 
 .search-box {
-	display: flex;
-	justify-content: flex-end;
-	flex: 1 1 0%;
-	
+
 	input {
 		border-radius: 25px;
-		background: #272727;
+		background: #ffffff;
 		border: 2px solid transparent;
 		outline: none;
 		height: 42px;
@@ -72,100 +61,18 @@ body {
 	}
 }
 
-.content-wrap {
-	display: flex;
-
-	aside {
-		flex: 1 1 250px;
-		max-width: 250px;
-		padding-right: 16px;
-
-		nav {
-			padding-left: 10px;
-			padding-right: 10px;
-
-			h3 {
-				color: #313131;
-				font-size: 24px;
-				margin-bottom: 16px;
-			}
-
-			a {
-				display: block;
-				padding: 8px 16px;
-				text-align: left;
-
-				color: #888;
-				font-size: 16px;
-				margin-bottom: 16px;
-
-				background-color: #EEE;
-				border-radius: 999px;
-				text-decoration: none;
-
-				transition: 0.4s;
-
-				&:hover {
-					background-color: #313131;
-					color: #AAA;
-				}
-			}
-		}
-	}
-
-	main {
-		flex: 1 1 0%;
-		padding: 0px 16px;
-
-		.main-head {
-			display: flex;
-			justify-content: flex-end;
-		}
-
-		.anime-list {
-			display: flex;
-			flex-wrap: wrap;
-			margin-top: 32px;
-			margin: 32px -8px 0px;
-
-			.anime-card {
-				flex: 1 1 17%;
-				max-width: 17%;
-				padding: 16px 8px;
-
-				a {
-					text-decoration: none;
-				}
-
-				figure {
-					display: block;
-					margin-bottom: 16px;
-
-					img {
-						display: block;
-						width: 100%;
-						height: 350px;
-						object-fit: contain;
-						border-radius: 16px;
-						box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
-
-						transition: 0.4s;
-					}
-				}
-
-				h3 {
-					color: #313131;
-				}
-
-				&:hover {
-					figure {
-						img {
-							box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
-							transform: scale(1.05);
-						}
-					}
-				}
-			}
-		}
-	}
+.video-item-poster {
+	height: 250px;
+    width: auto;
+    padding: .5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
 }

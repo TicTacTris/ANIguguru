@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
+import LeftSidebar from "./components/LeftSidebar";
 import MainContent from "./components/MainContent";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
 		const temp = await fetch(`https://api.jikan.moe/v3/top/anime/1/bypopularity`) //jikan req to grab anime by popularity
 			.then(res => res.json()); //converts response to json
 
-		setTopAnime(temp.top.slice(0, 5)); //slices the array and grabs only 5 out of the returned anime
+		setTopAnime(temp.top.slice(0, 10)); //slices the array and grabs only 5 out of the returned anime
 	}
 
 	const handleSearch = e => {
@@ -33,17 +33,21 @@ function App() {
 
 	return (
 		<div className="App">
-			<Header
-				handleSearch={handleSearch}
-				search={search}
-				setSearch={setSearch} />
+			<Header />
 
-			<div className="content-wrap">
-				<Sidebar
-					topAnime={topAnime} />
-					
-				<MainContent
-					animeList={animeList} />
+			<div className="container-fluid pt-3">
+				<div className="row">
+					<LeftSidebar
+						topAnime={topAnime}
+					/>
+
+					<MainContent
+						handleSearch={handleSearch}
+						search={search}
+						setSearch={setSearch}
+						animeList={animeList}
+					/>
+				</div>
 			</div>
 		</div>
 	);

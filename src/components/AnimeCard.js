@@ -1,14 +1,15 @@
 function AnimeCard({ anime }) {
     return (
-        <article className="anime-card">
-            <a href={anime.url} target="_blank" rel="noreferrer">
+        <div className=" col-6 mb-2 px-1">
+            <a href={anime.url}>
                 <figure>
-                    <img src={anime.image_url} alt="animeCover" />
+                    <img src={anime.image_url} className="video-item-poster rounded" alt="animeCover" />
                 </figure>
                 <h3>{anime.title}</h3>
             </a>
-        </article>
+        </div>
     )
 }
 
 export default AnimeCard
+
