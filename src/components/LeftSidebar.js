@@ -1,6 +1,6 @@
 function LeftSidebar({ topAnime }) {
     return (
-        <aside className="col-md-5 col-lg-3 mb-2">
+        <aside id="leftSidebar" className="col-md-5 col-lg-3 mb-2">
             <div className="border rounded p-3 mb-3">
                 <h3>Top Anime</h3>
 

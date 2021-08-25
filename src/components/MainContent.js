@@ -4,7 +4,7 @@ function MainContent(props) {
     return (
         <div id="content" className="main-head col-md-7 col-lg-6 mb-2 px-lg-0 pl-md-0">
             <div className="container">
-                <div id="search-box" className="mb-3 rounded">
+                <div id="search-box" className="p-2 mb-3 rounded">
                     <div>
                         <small>
                             Search for anime! Powered by Jikan (時間)

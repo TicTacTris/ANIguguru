@@ -11,6 +11,18 @@ body {
 	min-height: 100vh;
 }
 
+// --------------------------------------------------------- //
+
+#leftSidebar, #rightSidebar {
+    max-width: 22%;
+}
+
+#schedule-list a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+// --------------------------------------------------------- //
 .header {
 	background-color: #212121;
 
@@ -59,6 +71,21 @@ body {
 			color: #FFF;
 		}
 	}
+}
+
+.schedule-list-day, .schedule-list-header {
+    font-size: 1rem;
+    font-weight: 700!important;
+}
+
+.schedule-list-item {
+    font-size: 0.8em;
+}
+
+.schedule-list-item, .schedule-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .video-item-poster {
