@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import LeftSidebar from "./components/LeftSidebar";
 import MainContent from "./components/MainContent";
+import RightSidebar from "./components/RightSidebar";
 
 function App() {
 	const [animeList, setAnimeList] = useState([]); //holds main anime and set the var when searching
@@ -37,16 +38,19 @@ function App() {
 
 			<div className="container-fluid pt-3">
 				<div className="row">
-					<LeftSidebar
+					{/* <LeftSidebar
 						topAnime={topAnime}
-					/>
-
+					/> */}
+					<RightSidebar />
+					
 					<MainContent
 						handleSearch={handleSearch}
 						search={search}
 						setSearch={setSearch}
 						animeList={animeList}
 					/>
+
+					
 				</div>
 			</div>
 		</div>
