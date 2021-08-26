@@ -22,9 +22,7 @@ function MainContent(props) {
                     </div>
                 </div>
                 <div id="main-anime-list">
-                    <div className="anime-list-bar row mx-0 mb-2">
-                        <div className="col-sm-3 px-0 align-center video-list nav-title"></div>
-                    </div>
+                    <div className="anime-list-bar row mx-0 mb-2"></div>
                     <div className="anime-list row mx-0">
                         {props.animeList.map(anime => (
                             <AnimeCard

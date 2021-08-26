@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Header from "./components/Header";
-import LeftSidebar from "./components/LeftSidebar";
+// import LeftSidebar from "./components/LeftSidebar";
 import MainContent from "./components/MainContent";
 import RightSidebar from "./components/RightSidebar";
 
@@ -38,9 +38,6 @@ function App() {
 
 			<div className="container-fluid pt-3">
 				<div className="row">
-					{/* <LeftSidebar
-						topAnime={topAnime}
-					/> */}
 					<RightSidebar />
 					
 					<MainContent
@@ -50,7 +47,10 @@ function App() {
 						animeList={animeList}
 					/>
 
-					
+					{/* <LeftSidebar
+						topAnime={topAnime}
+					/> */}
+
 				</div>
 			</div>
 		</div>
